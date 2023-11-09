@@ -1,0 +1,247 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2a2185;
+    --white: #fff;
+    --gray: #22222227;
+    --dark: #000;
+    --black: #343a40;
+    --black1: rgba(3, 30, 35, 0.331);
+    --primary: #007bff;
+}
+
+ul,
+li {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: unset !important;
+    margin-bottom: unset !important;
+}
+
+
+/* ---------------- Navigation ------------------ */
+.sidebar {
+    position: fixed;
+    width: 250px;
+    background: var(--blue);
+    transition: 0.5s;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--black);
+}
+
+.icon img {
+    height: 40px;
+    width: 40px;
+}
+
+.sidebar {
+    margin-top: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0px !important;
+}
+
+.sidebar ul li:hover {
+    background-color: var(--black1) !important;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    color: var(--white) !important;
+}
+
+.sidebar ul li a .icon {
+    min-width: 60px;
+    text-align: center;
+}
+
+.sidebar ul li a .title {
+    padding: 0 10px;
+    text-align: start;
+
+}
+
+.custom-scrollbar-sidebar {
+    height: 90vh;
+    overflow: auto;
+}
+
+.custom-scrollbar-sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/*---------- scrollbar site icone ------------*/
+.custom-scrollbar-sidebar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+
+/* ----------------- Main ----------------*/
+.main {
+    position: absolute;
+    width: calc(100% - 250px);
+    left: 250px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+
+.main.active {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+.header {
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+
+.header .logo {
+    width: 150px;
+    padding: 0px 50px;
+    text-align: center;
+}
+
+.header .logo h3 a {
+    color: var(--white);
+}
+
+.toggle {
+    width: 5%;
+    padding: 0px 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.0rem;
+}
+
+.user_btn {
+    border: none !important;
+    border-radius: 50px;
+    color: #fff !important;
+}
+
+.user .user_icon {
+    padding: 10px 5px;
+}
+
+.user img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.user ul li {
+    padding: 8px 8px;
+}
+
+.user ul li a {
+    color: #6c757d !important;
+}
+
+.user ul li:hover {
+    background-color: var(--gray);
+}
+
+.user ul li a {
+    color: var(--dark);
+}
+
+.user ul li a i {
+    padding: 0px 10px;
+}
+
+.dropdown-menu {
+    --bs-dropdown-padding-x: unset !important;
+}
+
+.user ul li {
+    border-bottom: 1px dashed #6c757d;
+}
+
+/*Content scrollbar  start*/
+.custom-scrollbar-table {
+    overflow: auto;
+}
+
+.custom-scrollbar-table::-webkit-scrollbar {
+    width: 5px;
+    /* height: 5px; */
+}
+
+.custom-scrollbar-table::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+/*Content scrollbar  End*/
+
+
+
+/* table start */
+
+th i {
+    color: #cdd4e0;
+    padding: 5px;
+}
+
+.icons a {
+    padding: 5px;
+}
+
+.icons .view i {
+    color: #000 !important;
+}
+
+.icons .edit i {
+    color: #d5e219 !important;
+}
+
+.icons .delete i {
+    color: #e40a0a !important;
+}
+
+td:last-child {
+    text-align: end;
+}
+
+th:last-child {
+    text-align: end;
+}
+
+.icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
