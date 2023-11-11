@@ -285,8 +285,7 @@
                     </button>
                     <ul class="dropdown-menu ">
                         <li class="dropdown-item">
-                            <a class="dropdown-link" href="#"><i class="fas fa-cog"></i> Manage Account
-                            </a>
+                            <a class="dropdown-link" href="{{route('profile.edit')}}"><i class="fas fa-cog"></i> {{ __('Profile') }}</a>
                         </li>
                         <li class="dropdown-item">
                             <a class="dropdown-link" href="{{route('profile.edit')}}"><i class="fas fa-user-tie"></i> {{ __('Profile') }}</a>
@@ -305,7 +304,12 @@
             </div>
         </div>
 
+        
+        
+
         <div class="px-4 pt-4" style="margin-top: 50px;">
+            <!-- Button trigger modal -->
+
 
             {{-- ------------content part-------------- --}}
                 @yield('content')
