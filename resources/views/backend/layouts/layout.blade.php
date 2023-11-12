@@ -320,9 +320,9 @@
     </div>
 
     <script src="{{asset('bootstrap/bootstrap.bundle.min.js') }} "></script>
-    <script src="{{asset('backend/js/jquery-3.7.1.min.js') }} "></script>
+    <script src="{{asset('library/jquery-3.7.1.min.js') }} "></script>
     <script src="{{asset('backend/js/dataTables.js') }} "></script>
-    <script src="{{asset('backend/js/custom.js') }} "></script>
+    <script src="{{asset('backend/js/main.js') }} "></script>
 
     <script>
         $(document).ready(function () {

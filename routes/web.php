@@ -3,8 +3,16 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-
+// frontend route
 Route::get('/', function () {
+    return view('frontend/home/home');
+});
+
+
+
+// backend route
+
+Route::get('/login', function () {
     return view('auth.login');
 });
 
@@ -19,3 +27,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+
+
