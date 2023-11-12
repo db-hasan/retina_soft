@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{{asset('images/favicon.ico') }} " type="image/x-icon">
     <link rel="stylesheet" href="{{asset('frontend/css/style.css') }} ">
     <link rel="stylesheet" href="{{asset('bootstrap/bootstrap.min.css') }} ">
     <link rel="stylesheet" href="{{asset('backend/css/jquery.dataTables.css') }} ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <title>Document</title>
+    <title>Ryans Computers | Trusted Computer, Laptop & Component Shop in Bangladesh</title>
     
 </head>
 <body>
-    <div>
     <div class="navigation bg-dark text-light">
         <div class="container-fluid">
             <div class="d-flex justify-content-between">
                 <div class="navigation_contact">
                     <div class="d-flex">
                         <a class="p-2" href=""
-                            target="_blank"><i class="fa-solid fa-phone fa-lg"></i> +880 1723629080</a>
+                            target="_blank"><i class="fa-solid fa-phone"></i> +880 1723629080</a>
                         <a class="p-2" href=""
-                            target="_blank"><i class="fa-regular fa-envelope fa-xl"></i> info@helpsx.com</a>
+                            target="_blank"><i class="fa-regular fa-envelope"></i> info@helpsx.com</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="header bg-dark text-light">
-        <div class="container-fluid">
+    <div class="header py-2 bg-dark text-light sticky-top">
+        <div class="content">
             <div class="d-flex justify-content-between">
                 <div class="header_logo p-2" style="width: 25%;">
                     <a href="">RAYNS</a>
@@ -38,14 +38,24 @@
                     <div class="search">
                         <div class="input-group" style="width: 100%;">
                             <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
-                            <ul class="dropdown-menu " style="width: 200px;">
-                                <li class="dropdown-item"><a class="dropdown-link" href="#">Stock Report</a></li>
-                                <li class="dropdown-item"><a class="dropdown-link" href="#">Stock Report</a></li>
-                                <li class="dropdown-item"><a class="dropdown-link" href="#">Stock Report</a></li>
-                                <li class="dropdown-item"><a class="dropdown-link" href="#">Stock Report</a></li>
+                            <ul class="dropdown-menu custom-scrollbar" style="width: 200px;">
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Laptop</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Desktop and Server</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Gaming</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Tablet PC</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Printer</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Camera</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Security System</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Network</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Sound System</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Office Items</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Accessories</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Software</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Daily Life</a></li>
+                                <li class="dropdown-item"><a class="dropdown-link" href="#">Store</a></li>
                             </ul>
                             <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
-                            <button class="btn btn-light" type="button" >
+                            <button class="btn btn-light search_btn px-3" type="button" >
                                 <a class="" href=""><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
                             </button>
                         </div>
@@ -54,34 +64,43 @@
                 <div class="shop  p-2" style="width: 25%;">
                     <div class="header_bar">
                         <div class="d-flex justify-content-end">
-                            <a class="p-2" href=""><i class="fa-solid fa-cart-arrow-down fa-2xl"></i></a>
-                            <a class="p-2" href=""><i class="fa-solid fa-heart fa-2xl"></i></a>
-                            <a class="p-2" href=""><i class="fa-solid fa-circle-user fa-2xl"></i></a>
+                            <a class="p-2" href=""><i class="fa-solid fa-cart-arrow-down fa-xl"></i></a>
+                            <a class="p-2" href=""><i class="fa-solid fa-heart fa-xl"></i></a>
+                            <a class="p-2" href=""><i class="fa-solid fa-circle-user fa-xl"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-house"></i></a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Laptop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Desktop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Monitor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Desktop and Server</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Gaming</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tablet PC</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Printer</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Camera</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pinter</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Security System</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Network</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Sound System</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Office Items</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Software</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Daily Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    
 
     <div class="">
         @yield('content')
