@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{asset('images/banner2.webp') }}" class="d-block w-100" alt="Image 2">
+                    <img src="{{asset('images/banner1.webp') }}" class="d-block w-100" alt="Image 2">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>

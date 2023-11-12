@@ -14,6 +14,8 @@
     --black1: rgba(3, 30, 35, 0.331);
     --primary: #007bff;
     --hover: rgb(164, 222, 2);
+    --hover1: #72bf44;
+    --background: #f2f2f2;
 }
 
 ul,
@@ -25,6 +27,13 @@ a {
     text-decoration: none !important;
 }
 
+p {
+    margin-bottom: 0px !important;
+}
+
+.background {
+    background-color: var(--background);
+}
 
 h1,
 h2,
@@ -267,4 +276,29 @@ body {
 
 .top_brand img {
     width: 100%;
+}
+
+/* Product brand start */
+.filter {
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.filter .filter_name {
+    background-color: var(--hover1);
+}
+
+.filter .filter_name p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.product {
+    width: 1000px;
+}
+
+
+.product_header {
+    background-color: #fff;
 }

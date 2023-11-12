@@ -74,7 +74,8 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="content bg-light">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,7 +84,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="#">Laptop</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Desktop and Server</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Desktop</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Gaming</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Tablet PC</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Printer</a></li>
@@ -95,21 +96,21 @@
                     <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Software</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Daily Life</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+    </div>
     
 
     <div class="">
         @yield('content')
     </div>
 
-    <div class="footer bg-dark text-light px-5">
+    <div class="footer bg-dark text-light px-4">
         <div class="container-fluid">
-            <div class="contact text-center">
-                <h3>Contact me</h3>
+            <div class="contact text-center pt-5 pb-3">
+                <h1>CONTACT</h1>
             </div>
             <div class="row py-4">
                 <div class="col">
