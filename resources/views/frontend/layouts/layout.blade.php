@@ -119,10 +119,9 @@
             <div class="contact text-center pt-5 pb-3">
                 <h1>CONTACT</h1>
             </div>
-            <div class="row py-4">
+            <div class="row pt-4">
                 <div class="col">
-                    <p class="footer_navigation"><a href="">About us</a></p>
-                    <li><a href="">Head office</a></li>
+                    <h4 class="footer_navigation"><a href="">Head Office</a></h4>
                     <li><a href="">Ryans Computers Limited</a></li>
                     <li><a href="">Kusholi Bhaban, 4th Floor,</a></li>
                     <li><a href="">Rokeya Sharani, Agargaon, Dhaka-1207</a></li>
@@ -132,8 +131,7 @@
                     </li>
                 </div>
                 <div class="col bdr">
-                    <p class="footer_navigation"><a href="">Head office</a></p>
-                    <li><a href="">Contact Us</a></li>
+                    <h4 class="footer_navigation"><a href="">About us</a></h4>
                     <li><a href="">Ryans Computers Limited</a></li>
                     <li><a href="">Kusholi Bhaban, 4th Floor,</a></li>
                     <li><a href="">Rokeya Sharani, Agargaon, Dhaka-1207</a></li>
@@ -143,7 +141,7 @@
                     </li>
                 </div>
                 <div class="col bdr">
-                    <p class="footer_navigation"><a href="">Payment system</a></p>
+                    <h4 class="footer_navigation"><a href="">Payment system</a></h4>
                     <div class="card_img">
                         <img src="{{asset('images/card.png') }}" alt="">
                     </div>
@@ -152,8 +150,7 @@
                     </div>
                 </div>
                 <div class="col bdr">
-                    <p class="footer_navigation"><a href="">Contact Us</a></p>
-                    <li><a href="">Head office</a></li>
+                    <h4 class="footer_navigation"><a href="">Contact Us</a></h4>
                     <li><a href="">Ryans Computers Limited</a></li>
                     <li><a href="">Kusholi Bhaban, 4th Floor,</a></li>
                     <li><a href="">Rokeya Sharani, Agargaon, Dhaka-1207</a></li>
@@ -171,7 +168,7 @@
                 </div>
             </div>
             <div class="text-center p-4">
-                <p class="footer_navigation">
+                <p class="footer_navigation py-2">
                     <a href="">Accessibility</a>, <a href="">User Agreement</a>, <a href="">Privacy</a>, <a href="">Payments Terms of Use</a>, <a href="">Cookies</a>, <a href="">Your Privacy Choices and AdChoice.</a>
                 </p>
                 <p>Copyright © 2022-2023 Ryans Computers Limited. All Rights Reserved.</p>

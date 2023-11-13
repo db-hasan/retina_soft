@@ -162,12 +162,21 @@ body {
 
 }
 
+.footer li {
+    padding: 3px 0px !important;
+}
+
 .footer a {
     color: var(--white) !important;
 }
 
+.footer_navigation {
+    margin-bottom: 20px !important;
+}
+
 .footer_navigation a {
     border-bottom: 1px solid #fff;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* footer end */

@@ -4,10 +4,10 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 // frontend route
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('frontend/home/home');
 });
-Route::get('/', function () {
+Route::get('/product', function () {
     return view('frontend/product/product');
 });
 
