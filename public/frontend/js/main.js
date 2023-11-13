@@ -4,16 +4,3 @@ var myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
     wrap: true,     // Set to false if you don't want the carousel to loop
 });
 // Carousel end
-
-
-let cartCount = 0;
-
-function addToCart() {
-    cartCount++;
-    updateBadge();
-}
-
-function updateBadge() {
-    const badge = document.getElementById("badge");
-    badge.textContent = cartCount;
-}
