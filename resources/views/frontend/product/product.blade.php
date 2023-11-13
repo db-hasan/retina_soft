@@ -6,50 +6,87 @@
     <div class="d-flex">
         <div class="filter">
             <div class="d-flex justify-content-between filter_name">
-                <p class="p-2">Filter By</p>
+                <p class="p-2">Filter</p>
                 <a class="p-2" href=""><i class="fas fa-sync-alt text-white"></i></a>
             </div>
 
-            {{-- <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="d-flex justify-content-between mt-3 container">
+                <label for="customRange" class="form-label">Price:</label>
+                <label class="customRange" for="customRange" id="rangeValue">500</label>
+            </div>
+            <div class="container">
+                <input type="range" class="form-range" min="500" max="100000" id="customRange">
+            </div>
+
+            <div class="accordion accordion-flush" id="#color">
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Color
+                            Brand
                         </button>
                     </div>
-                    <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#color">
                         <div class="accordion-body">
                             <div class="d-flex justify-content-between filter_list">
-                                <li>dgfgkj</li>
-                                <li>gg</li>
+                                <li class="d-flex align-items-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label ps-2" for="flexCheckDefault">Acer</label>
+                                </li>
+                                <li>
+                                    <span class="filter_qty ">5</span>
+                                </li>
                             </div>
                             <div class="d-flex justify-content-between filter_list">
-                                <li>dgfgkj</li>
-                                <li>gg</li>
+                                <li class="d-flex align-items-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label ps-2" for="flexCheckDefault">Acer</label>
+                                </li>
+                                <li>
+                                    <span class="filter_qty ">5</span>
+                                </li>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> --}}
-
-            <div class="d-flex justify-content-between" id="filter">
-                <p class="p-2">Filter By</p>
-                <a class="p-2" href=""><i class="fa-solid fa-plus"></i></a>
             </div>
-            <div class="" id="main">
-                <p>dfgdfhjd</p>
-                <p>hjhhdgdghhh</p>
+            <div class="accordion accordion-flush" id="brand">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Color
+                        </button>
+                    </div>
+                    <div id="flush-collapse2" class="accordion-collapse collapse" data-bs-parent="#brand">
+                        <div class="accordion-body">
+                            <div class="d-flex justify-content-between filter_list">
+                                <li class="d-flex align-items-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label ps-2" for="flexCheckDefault">Acer</label>
+                                </li>
+                                <li>
+                                    <span class="filter_qty ">5</span>
+                                </li>
+                            </div>
+                            <div class="d-flex justify-content-between filter_list">
+                                <li class="d-flex align-items-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label ps-2" for="flexCheckDefault">Acer</label>
+                                </li>
+                                <li>
+                                    <span class="filter_qty ">5</span>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
-
 
         </div>
         <div class="product ms-2">
             <div class="product_header ">
                 <div class="d-flex justify-content-between ">
                     <div class="d-flex">
-                        <h4 class="pt-2 pb-3 ps-2">Hp all products list in Bangladesh</h4>
+                        <h4 class="pt-2 pb-3 ps-2">Monitor Price</h4>
                         <span class="pt-3"><small>(93 Products found)</small></span>
                     </div>
                     <div class="d-flex align-item-center">
@@ -248,21 +285,15 @@
         </div>
     </div>
 </div>
-    <script src="{{asset('library/jquery-3.7.1.min.js') }} "></script>
 
- <script>
-        $(document).ready(function() {
-            $('#filter').on("click", function(e) {
-                e.preventDefault();
-                $('#main').toggle();
-                // Toggle Font Awesome icon class
-                $('#filter i').toggleClass('fa-filter fa-times'); // Change to the appropriate Font Awesome classes
-            });
-        });
-    </script>
+<script>
+  // Update the output element with the current value of the range input
+  const rangeInput = document.getElementById('customRange');
+  const rangeValueOutput = document.getElementById('rangeValue');
 
-
-
-
+  rangeInput.addEventListener('input', function() {
+    rangeValueOutput.textContent = this.value;
+  });
+</script>
 
 @endsection

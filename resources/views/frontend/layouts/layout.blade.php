@@ -14,11 +14,11 @@
     
 </head>
 <body>
-    <div class="navigation bg-dark text-light">
+    <div class="navigation bg-dark text-light pt-2">
         <div class="container-fluid">
             <div class="d-flex justify-content-between">
                 <div class="navigation_contact">
-                    <div class="d-flex">
+                    <div class="d-flex ">
                         <a class="p-2" href=""
                             target="_blank"><i class="fa-solid fa-phone"></i> +880 1723629080</a>
                         <a class="p-2" href=""
@@ -57,7 +57,7 @@
                             </ul>
                             <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
                             <button class="btn btn-light search_btn px-3" type="button" >
-                                <a class="" href=""><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+                                <a class="" href=""><i class="fa-solid fa-magnifying-glass "></i></a>
                             </button>
                         </div>
                     </div>
