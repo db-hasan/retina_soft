@@ -17,6 +17,14 @@
     <div class="navigation bg-dark text-light pt-2">
         <div class="container-fluid">
             <div class="d-flex justify-content-between">
+                <div class="d-flex navigation_contact">
+                    <a class="p-2" href="https://www.facebook.com/infoalihasanbd"target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                    <a class="p-2" href="https://www.instragram.com/"target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                    <a class="p-2" href="https://wa.me/1723629080" target="_blank"><i class=" fa-brands fa-whatsapp fa-lg"></i></a>
+                    <a class="p-2" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                    <a class="p-2" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                    <a class="p-2" href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                </div>
                 <div class="navigation_contact">
                     <div class="d-flex ">
                         <a class="p-2" href=""
@@ -160,9 +168,12 @@
                     </li>
                     <li>
                         <div class="d-flex ">
-                        <a class="p-2" href="https://www.facebook.com/infoalihasanbd"target="_blank"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                        <a class="p-2" href="https://www.instragram/"target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                        <a class="p-2" href="https://wa.me/1723629080" target="_blank"><i class=" fa-brands fa-whatsapp fa-xl"></i></a>
+                            <a class="p-2" href="https://www.facebook.com/infoalihasanbd"target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                            <a class="p-2" href="https://www.instragram.com/"target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                            <a class="p-2" href="https://wa.me/1723629080" target="_blank"><i class=" fa-brands fa-whatsapp fa-lg"></i></a>
+                            <a class="p-2" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                            <a class="p-2" href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in fa-lg"></i></a>
+                            <a class="p-2" href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter fa-lg"></i></a>
                     </div>
                     </li>
                 </div>
