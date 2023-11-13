@@ -298,7 +298,24 @@ body {
     width: 1000px;
 }
 
-
 .product_header {
     background-color: #fff;
 }
+
+/* .accordion-button {
+    padding: 8px 10px !important;
+    font-weight: bold;
+    font-size: 14px !important;
+}
+
+.accordion-body {
+    padding: 10px 10px !important;
+}
+
+.accordion-body li {
+    padding: 5px 0px !important;
+}
+
+.accordion-body .filter_list:hover {
+    color: #127de9;
+} */

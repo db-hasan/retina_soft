@@ -9,6 +9,41 @@
                 <p class="p-2">Filter By</p>
                 <a class="p-2" href=""><i class="fas fa-sync-alt text-white"></i></a>
             </div>
+
+            {{-- <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Color
+                        </button>
+                    </div>
+                    <div id="flush-collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="d-flex justify-content-between filter_list">
+                                <li>dgfgkj</li>
+                                <li>gg</li>
+                            </div>
+                            <div class="d-flex justify-content-between filter_list">
+                                <li>dgfgkj</li>
+                                <li>gg</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+
+            <div class="d-flex justify-content-between" id="filter">
+                <p class="p-2">Filter By</p>
+                <a class="p-2" href=""><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="" id="main">
+                <p>dfgdfhjd</p>
+                <p>hjhhdgdghhh</p>
+            </div>
+
+
+
+
         </div>
         <div class="product ms-2">
             <div class="product_header ">
@@ -213,6 +248,21 @@
         </div>
     </div>
 </div>
+    <script src="{{asset('library/jquery-3.7.1.min.js') }} "></script>
+
+ <script>
+        $(document).ready(function() {
+            $('#filter').on("click", function(e) {
+                e.preventDefault();
+                $('#main').toggle();
+                // Toggle Font Awesome icon class
+                $('#filter i').toggleClass('fa-filter fa-times'); // Change to the appropriate Font Awesome classes
+            });
+        });
+    </script>
+
+
+
 
 
 @endsection

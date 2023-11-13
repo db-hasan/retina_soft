@@ -181,7 +181,7 @@
     
 
 
-    <script src="{{asset('library/js/jquery-3.7.1.min.js') }} "></script>
+    <script src="{{asset('library/jquery-3.7.1.min.js') }} "></script>
     <script src="{{asset('bootstrap/bootstrap.bundle.min.js') }} "></script>
     <script src="{{asset('frontend/js/main.js') }} "></script>
 </body>
