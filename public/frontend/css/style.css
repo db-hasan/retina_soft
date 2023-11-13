@@ -55,6 +55,13 @@ h6 {
     color: var(--hover) !important;
 }
 
+.header_logo a {
+    color: var(--hover) !important;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     line-height: unset !important;
 }
@@ -106,13 +113,6 @@ body {
 
 .header_bar a i:hover {
     color: var(--hover) !important;
-}
-
-.header_logo a {
-    color: var(--hover) !important;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
 }
 
 .navbar a {

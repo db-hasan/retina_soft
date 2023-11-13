@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{asset('backend/css/jquery.dataTables.css') }} ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Ryans Computers | Trusted Computer, Laptop & Component Shop in Bangladesh</title>
+
     
 </head>
 <body>
@@ -62,12 +63,18 @@
                     </div>
                 </div>
                 <div class="shop  p-2" style="width: 25%;">
-                    <div class="header_bar">
-                        <div class="d-flex justify-content-end">
-                            <a class="p-2" href=""><i class="fa-solid fa-cart-arrow-down fa-xl"></i></a>
-                            <a class="p-2" href=""><i class="fa-solid fa-heart fa-xl"></i></a>
-                            <a class="p-2" href=""><i class="fa-solid fa-circle-user fa-xl"></i></a>
-                        </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="button" class="btn text-light position-relative">
+                        <i class="fa-solid fa-cart-arrow-down fa-xl"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
+                        <button type="button" class="btn text-light position-relative">
+                            <i class="fa-solid fa-heart fa-xl"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </button>
+                        <button type="button" class="btn text-light position-relative">
+                            <i class="fa-solid fa-circle-user fa-xl"></i>
+                        </button>
                     </div>
                 </div>
             </div>
