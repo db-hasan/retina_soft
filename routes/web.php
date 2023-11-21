@@ -7,10 +7,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('frontend/home/home');
 });
-Route::get('/product', function () {
-    return view('frontend/product/product');
-});
-
 
 
 // backend route
