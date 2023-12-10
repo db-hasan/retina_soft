@@ -34,116 +34,63 @@
                         <span class="title">Dashboard</span>
                     </a>
                 </li>
+                
                 <li class="">
-                    <a href="{{url('/admin/package')}}">
+                    <a href="">
                         <span class="icon">
-                            <i class="fa-regular fa-folder-open fa-lg"></i>
+                            <i class="fa-solid fa-baby-carriage fa-lg"></i>
                         </span>
-                        <span class="title">Package</span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="{{url('/admin/booking')}}">
-                        <span class="icon">
-                            <i class="fa-solid fa-cart-arrow-down fa-lg"></i>
-                        </span>
-                        <span class="title">Booking</span>
+                        <span class="title">Customer Balance</span>
                     </a>
                 </li>
                 <li class="">
                     <a href="">
                         <span class="icon">
-                            <i class="fa-regular fa-credit-card fa-lg"></i>
+                            <i class="fa-solid fa-chart-column fa-lg"></i>
                         </span>
-                        <span class="title">Payment</span>
+                        <span class="title">Report Customer</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="{{url('/admin/promo')}}">
+                    <a href="">
                         <span class="icon">
-                            <i class="fa-solid fa-percent fa-lg"></i>
+                            <i class="fa-solid fa-truck fa-lg"></i>
                         </span>
-                        <span class="title">Promo</span>
+                        <span class="title">Suppliers Balance</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="{{url('/admin/bundle')}}">
-                        <span class="icon">
-                            <i class="fa-solid fa-layer-group fa-lg"></i>
-                        </span>
-                        <span class="title">Bundle</span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="{{url('/admin/expense')}}">
-                        <span class="icon">
-                            <i class="fa-solid fa-baby-carriage fa-lg"></i>
-                        </span>
-                        <span class="title">Expense</span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#">
+                    <a href="">
                         <span class="icon">
                             <i class="fa-solid fa-chart-column fa-lg"></i>
                         </span>
-                        <span class="title">Report</span>
+                        <span class="title">Report Suppliers</span>
                     </a>
                 </li>
                 <li class="">
-                    <a href="#">
+                    <a href="{{ route('customer.index') }}">
                         <span class="icon">
-                            <i class="fa-solid fa-house-circle-check fa-lg"></i>
+                            <i class="fa-solid fa-circle-plus fa-lg"></i>
                         </span>
-                        <span class="title">Home</span>
+                        <span class="title">Add Customer</span>
                     </a>
                 </li>
+                
                 <li class="">
-                    <a href="#">
+                    <a href="{{ route('supplier.index') }}">
                         <span class="icon">
-                            <i class="fa-solid fa-layer-group fa-lg"></i>
+                            <i class="fa-solid fa-circle-plus fa-lg"></i>
                         </span>
-                        <span class="title">Service</span>
+                        <span class="title">Add Suppliers</span>
                     </a>
                 </li>
+                
                 <li class="">
-                    <a href="#">
-                        <span class="icon">
-                            <i class="fa-solid fa-hand-holding-medical fa-lg"></i>
-                        </span>
-                        <span class="title">Facilities</span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#">
-                        <span class="icon">
-                            <i class="fa-solid fa-building-columns fa-lg"></i>
-                        </span>
-                        <span class="title">About Us</span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="{{url('/contact/index')}}">
-                        <span class="icon">
-                            <i class="fa-solid fa-address-card fa-lg"></i>
-                        </span>
-                        <span class="title">Contact Us</span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="{{url('/admin/user')}}">
+                    <a href="">
                         <span class="icon">
                             <i class="fa-solid fa-users fa-lg"></i>
                         </span>
                         <span class="title">Users</span>
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#">
-                        <span class="icon">
-                            <i class="fa-solid fa-right-from-bracket fa-lg"></i>
-                        </span>
-                        <span class="title">Logout</span>
                     </a>
                 </li>
             </div>
@@ -297,6 +244,7 @@
                             onclick="event.preventDefault();
                             this.closest('form').submit();">
                             <i class="fas fa-sign-out-alt"></i> {{ __('Log Out') }}</a>
+                            </form>
                         </li>
                         
                     </ul>
