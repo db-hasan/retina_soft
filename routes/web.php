@@ -35,12 +35,12 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('customerbalance/index',[CustomerbalanceController::class,'index'])->name('customerbalance.index');
-    Route::get('customerbalance/insert',[CustomerbalanceController::class,'create'])->name('customerbalance.create');
-    Route::post('customerbalance/insert',[CustomerbalanceController::class,'store'])->name('customerbalance.store');
-    Route::get('customerbalance/update/{customerbalance_id}',[CustomerbalanceController::class,'edit'])->name('customerbalance.edit');
-    Route::post('customerbalance/update/{customerbalance_id}',[CustomerbalanceController::class,'update'])->name('customerbalance.update');
-    Route::get('customerbalance/destroy/{customerbalance_id}',[CustomerbalanceController::class,'destroy'])->name('customerbalance.destroy');
+    Route::get('customerbalance/index',[CustomerbalanceController::class,'index'])->name('cb.index');
+    Route::get('customerbalance/insert',[CustomerbalanceController::class,'create'])->name('cb.create');
+    Route::post('customerbalance/insert',[CustomerbalanceController::class,'store'])->name('cb.store');
+    Route::get('customerbalance/update/{cb_id}',[CustomerbalanceController::class,'edit'])->name('cb.edit');
+    Route::post('customerbalance/update/{cb_id}',[CustomerbalanceController::class,'update'])->name('cb.update');
+    Route::get('customerbalance/destroy/{cb_id}',[CustomerbalanceController::class,'destroy'])->name('cb.destroy');
 });
 
 
@@ -54,12 +54,12 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('supplierbalance/index',[SupplierbalanceController::class,'index'])->name('supplierbalance.index');
-    Route::get('supplierbalance/insert',[SupplierbalanceController::class,'create'])->name('supplierbalance.create');
-    Route::post('supplierbalance/insert',[SupplierbalanceController::class,'store'])->name('supplierbalance.store');
-    Route::get('supplierbalance/update/{supplierbalance_id}',[SupplierbalanceController::class,'edit'])->name('supplierbalance.edit');
-    Route::post('supplierbalance/update/{supplierbalance_id}',[SupplierbalanceController::class,'update'])->name('supplierbalance.update');
-    Route::get('supplierbalance/destroy/{supplierbalance_id}',[SupplierbalanceController::class,'destroy'])->name('supplierbalance.destroy');
+    Route::get('supplierbalance/index',[SupplierbalanceController::class,'index'])->name('sb.index');
+    Route::get('supplierbalance/insert',[SupplierbalanceController::class,'create'])->name('sb.create');
+    Route::post('supplierbalance/insert',[SupplierbalanceController::class,'store'])->name('sb.store');
+    Route::get('supplierbalance/update/{sb_id}',[SupplierbalanceController::class,'edit'])->name('sb.edit');
+    Route::post('supplierbalance/update/{sb_id}',[SupplierbalanceController::class,'update'])->name('sb.update');
+    Route::get('supplierbalance/destroy/{sb_id}',[SupplierbalanceController::class,'destroy'])->name('sb.destroy');
 });
 
 require __DIR__.'/auth.php';

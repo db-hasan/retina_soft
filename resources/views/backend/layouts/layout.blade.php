@@ -36,7 +36,7 @@
                 </li>
                 
                 <li class="">
-                    <a href="">
+                    <a href="{{ route('cb.index') }}">
                         <span class="icon">
                             <i class="fa-solid fa-baby-carriage fa-lg"></i>
                         </span>
@@ -52,7 +52,7 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="">
+                    <a href="{{ route('sb.index') }}">
                         <span class="icon">
                             <i class="fa-solid fa-truck fa-lg"></i>
                         </span>
