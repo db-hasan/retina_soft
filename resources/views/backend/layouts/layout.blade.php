@@ -44,6 +44,14 @@
                     </a>
                 </li>
                 <li class="">
+                    <a href="{{ route('report.customer') }}">
+                        <span class="icon">
+                            <i class="fa-solid fa-chart-column fa-lg"></i>
+                        </span>
+                        <span class="title">Customer Report</span>
+                    </a>
+                </li>
+                <li class="">   
                     <a href="{{ route('sb.index') }}">
                         <span class="icon">
                             <i class="fa-solid fa-truck fa-lg"></i>
@@ -52,11 +60,11 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="">
+                    <a href="{{ route('report.supplier') }}">
                         <span class="icon">
                             <i class="fa-solid fa-chart-column fa-lg"></i>
                         </span>
-                        <span class="title">Report Balance</span>
+                        <span class="title">Supplier Report</span>
                     </a>
                 </li>
                 <li class="">

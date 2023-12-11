@@ -62,6 +62,14 @@ Route::middleware('auth')->group(function () {
     Route::get('supplierbalance/destroy/{sb_id}',[SupplierbalanceController::class,'destroy'])->name('sb.destroy');
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('report/customer',[CustomerreportController::class,'customer'])->name('report.customer');
+
+});
+Route::middleware('auth')->group(function () {
+    Route::get('report/supplier',[SupplierreportController::class,'supplier'])->name('report.supplier');
+});
+
 require __DIR__.'/auth.php';
 
 
