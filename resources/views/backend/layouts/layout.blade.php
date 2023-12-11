@@ -44,14 +44,6 @@
                     </a>
                 </li>
                 <li class="">
-                    <a href="">
-                        <span class="icon">
-                            <i class="fa-solid fa-chart-column fa-lg"></i>
-                        </span>
-                        <span class="title">Report Customer</span>
-                    </a>
-                </li>
-                <li class="">
                     <a href="{{ route('sb.index') }}">
                         <span class="icon">
                             <i class="fa-solid fa-truck fa-lg"></i>
@@ -64,7 +56,7 @@
                         <span class="icon">
                             <i class="fa-solid fa-chart-column fa-lg"></i>
                         </span>
-                        <span class="title">Report Suppliers</span>
+                        <span class="title">Report Balance</span>
                     </a>
                 </li>
                 <li class="">
