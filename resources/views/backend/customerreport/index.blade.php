@@ -53,7 +53,7 @@
                     $balance       = $income - $expence;
                 ?> 
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">{{$loop->index+1}}</th>
                     <td>{{$item->customer_name}}</td>
                     <td>{{$income}}</td>
                     <td>{{$expence }}</td>
