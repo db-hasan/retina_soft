@@ -33,19 +33,45 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Customer</th>
-                    <th scope="col">Sales</th>
+                    <th scope="col">Income</th>
                     <th scope="col">Expanse</th>
-                    <th scope="col">Balance</th>
+                    <th scope="col">Profit</th>
+                    <th scope="col">Balance Status</th>
                 </tr>
             </thead>
-            <tbody>    
+            <tbody>
+                <?php
+                    $totalIncome  = 0;
+                    $totalExpence = 0;
+                ?> 
+                @foreach ($customers as $item)
+                <?php
+                    $income        = $item->income;
+                    $totalIncome  += $income;
+                    $expence       = $item->expence;
+                    $totalExpence += $expence;
+                    $balance       = $income - $expence;
+                ?> 
                 <tr>
                     <th scope="row">1</th>
-                    <td>Name</td>
-                    <td>100</td>
-                    <td>90</td>
-                    <td>10</td>
+                    <td>{{$item->customer_name}}</td>
+                    <td>{{$income}}</td>
+                    <td>{{$expence }}</td>
+                    <td>{{$balance}}</td>
+                     @if($balance<0)
+                        <td class="text-danger"> Negative Balence</td>
+                    @else
+                        <td class="text-primary"> Positive Balence</td>
+                    @endif
                 </tr>
+                @endforeach
+                <tr>
+                    <th class="text-end bg-info border-end" colspan="2">Total:</th>
+                    <th class="text-start bg-info border-end">{{$totalIncome}}</th>
+                    <th class="text-start bg-info border-end">{{$totalExpence}}</th>
+                    <th class="text-start bg-info">{{$totalIncome-$totalExpence}}</th>
+                </tr>  
+                
             </tbody>
         </table>
     </div>
