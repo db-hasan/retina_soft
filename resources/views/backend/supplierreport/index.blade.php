@@ -32,38 +32,45 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Suppliers</th>
+                    <th scope="col">Supplier</th>
                     <th scope="col">Income</th>
                     <th scope="col">Expanse</th>
-                    <th scope="col">Balance</th>
+                    <th scope="col">Profit</th>
+                    <th scope="col">Balance Status</th>
                 </tr>
             </thead>
             <tbody>
-                {{-- <?php
-                    $grandTotalSales = 0;
-                    $grandTtotalCollection = 0;
-                ?>
-
-               
-                @foreach ($customers as $customer)
                 <?php
-                    $grandTotalSales += $customer->totalSales;
-                    $grandTtotalCollection += $customer->totalCollection;
-                ?>      
+                    $totalIncome  = 0;
+                    $totalExpence = 0;
+                ?> 
+                @foreach ($suppliers as $item)
+                <?php
+                    $income        = $item->income;
+                    $totalIncome  += $income;
+                    $expence       = $item->expence;
+                    $totalExpence += $expence;
+                    $balance       = $income - $expence;
+                ?> 
                 <tr>
-                    <th scope="row">{{$loop->index+1}}</th>
-                    <td>{{$customer->customar_name}}</td>
-                    <td>{{$customer->totalSales}}</td>
-                    <td>{{$customer->totalCollection}}</td>
-                    <td>{{$customer->totalSales - $customer->totalCollection}}</td>
+                    <th scope="row">1</th>
+                    <td>{{$item->supplier_name}}</td>
+                    <td>{{$income}}</td>
+                    <td>{{$expence }}</td>
+                    <td>{{$balance}}</td>
+                     @if($balance<0)
+                        <td class="text-danger"> Negative Balence</td>
+                    @else
+                        <td class="text-primary"> Positive Balence</td>
+                    @endif
                 </tr>
-                @endforeach --}}
-                {{-- <tr >
-                    <th class="text-end" colspan="2">Total:</th>
-                    <th class="text-start">{{$grandTotalSales}}</th>
-                    <th class="text-start">{{$grandTtotalCollection}}</th>
-                    <th class="text-end">{{$grandTotalSales-$grandTtotalCollection}}</th>
-                </tr> --}}
+                @endforeach
+                <tr>
+                    <th class="text-end bg-info border-end" colspan="2">Total:</th>
+                    <th class="text-start bg-info border-end">{{$totalIncome}}</th>
+                    <th class="text-start bg-info border-end">{{$totalExpence}}</th>
+                    <th class="text-start bg-info">{{$totalIncome-$totalExpence}}</th>
+                </tr>  
                 
             </tbody>
         </table>
