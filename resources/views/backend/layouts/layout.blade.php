@@ -38,7 +38,7 @@
                 <li class="">
                     <a href="{{ route('cb.index') }}">
                         <span class="icon">
-                            <i class="fa-solid fa-baby-carriage fa-lg"></i>
+                            <i class="fa-solid fa-user fa-lg"></i>
                         </span>
                         <span class="title">Customer Balance</span>
                     </a>
