@@ -7,6 +7,7 @@ use App\Http\Controllers\backend\CustomerreportController;
 use App\Http\Controllers\backend\SupplierController;
 use App\Http\Controllers\backend\SupplierbalanceController;
 use App\Http\Controllers\backend\SupplierreportController;
+use App\Http\Controllers\backend\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 // backend route
@@ -15,9 +16,13 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/dashboard', function () {
-    return view('backend/dashboard/dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('backend/dashboard/dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard');
+});
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -5,28 +5,28 @@
             <div class='col-md-3 p-2'>
                 <div class='card p-3 text-light bg-info bg-gradient'>
                     <p><strong>Customer</strong></p>
-                    <p><i class='fa-solid fa-user fa-2xl'></i> 1011001</p>
+                    <p><i class='fa-solid fa-user fa-2xl'></i> <strong>{{$indexCustomer}}</strong></p>
                     <span>Total Customer</span>
                 </div>
             </div>
             <div class='col-md-3 p-2'>
                 <div class='card p-3 text-light bg-success bg-opacity-75'>
-                    <p><strong>Sales</strong></p>
-                    <p><i class='fa-solid fa-cart-shopping fa-2xl'></i> 1011001</p>
-                    <span>Total Sales</span>
+                    <p><strong>Income</strong></p>
+                    <p><i class='fa-solid fa-cart-shopping fa-2xl'></i> <strong>{{$customerIncome}}</strong></p>
+                    <span>Total Income</span>
                 </div>
             </div>
             <div class='col-md-3 p-2'>
                 <div class='card p-3 text-light bg-danger bg-opacity-75'>
                     <p><strong>Expense</strong></p>
-                    <p><i class='fa-solid fa-money-check-dollar  fa-2xl'></i> 1011001</p>
+                    <p><i class='fa-solid fa-money-check-dollar  fa-2xl'></i> <strong>{{$customerExpense}}</strong></p>
                     <span>Total Expense</span>
                 </div>
             </div>
             <div class='col-md-3 p-2'>
                 <div class='card p-3 text-light' style="background-color: #007bff">
                     <p><strong>Profit</strong></p>
-                    <p><i class='fa-solid fa-chart-column fa-2xl'></i> <strong>00</strong></p>
+                    <p><i class='fa-solid fa-chart-column fa-2xl'></i> <strong>{{$customerIncome - $customerExpense}}</strong></p>
                     <span>Total Profit</span>
                 </div>
             </div>
@@ -34,28 +34,28 @@
             <div class='col-md-3 p-2'>
                 <div class='card p-3 text-light bg-info bg-gradient'>
                     <p><strong>Suppliers</strong></p>
-                    <p><i class='fa-solid fa-truck fa-2xl'></i> 1011001</p>
+                    <p><i class='fa-solid fa-truck fa-2xl'></i> <strong>{{$indexSupplier}}</strong></p>
                     <span>Total Suppliers</span>
                 </div>
             </div>
             <div class='col-md-3 p-2'>
                 <div class='card p-3 text-light bg-success bg-opacity-75'>
                     <p><strong>Sales</strong></p>
-                    <p><i class='fa-solid fa-cart-shopping fa-2xl'></i> 1011001</p>
+                    <p><i class='fa-solid fa-cart-shopping fa-2xl'></i> <strong>{{$supplierIncome}}</strong></p>
                     <span>Total Sales</span>
                 </div>
             </div>
             <div class='col-md-3 p-2'>
                 <div class='card p-3 text-light bg-danger bg-opacity-75'>
                     <p><strong>Expense</strong></p>
-                    <p><i class='fa-solid fa-money-check-dollar  fa-2xl'></i> 1011001</p>
+                    <p><i class='fa-solid fa-money-check-dollar  fa-2xl'></i> <strong>{{$supplierExpense}}</strong></p>
                     <span>Total Expense</span>
                 </div>
             </div>
             <div class='col-md-3 p-2'>
                 <div class='card p-3 text-light' style="background-color: #007bff">
                     <p><strong>Profit</strong></p>
-                    <p><i class='fa-solid fa-chart-column fa-2xl'></i> <strong>00</strong></p>
+                    <p><i class='fa-solid fa-chart-column fa-2xl'></i> <strong>{{$supplierIncome - $supplierExpense }}</strong></p>
                     <span>Total Profit</span>
                 </div>
             </div>
